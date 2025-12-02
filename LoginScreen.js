@@ -17,7 +17,7 @@ export default function LoginScreen({ currentUrl, setCurrentUrl, urlHistory, onO
                 style={styles.input}
                 value={currentUrl}
                 onChangeText={setCurrentUrl}
-                placeholder="Masukkan IP (192.168.1.100:8080) atau URL"
+                placeholder="Masukkan IP (192.168.1.100:3000/display) atau URL"
                 placeholderTextColor="#ccc"
                 autoCapitalize="none"
                 autoCorrect={false}

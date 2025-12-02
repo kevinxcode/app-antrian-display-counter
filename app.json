@@ -17,13 +17,32 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000000"
       },
-      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "WAKE_LOCK"],
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ],
       "package": "com.antrian.display.tv",
       "versionCode": 1,
       "screenOrientation": "landscape",
       "allowBackup": false,
       "hardwareAccelerated": true,
       "keepScreenOn": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8bffdb2d-d88c-4482-8098-cbff194e56ed"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/8bffdb2d-d88c-4482-8098-cbff194e56ed"
+    },
+    "ios": {}
   }
 }
