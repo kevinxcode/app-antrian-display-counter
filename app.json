@@ -1,29 +1,29 @@
 {
   "expo": {
-    "name": "antrian-webview-display",
+    "name": "Display Antrian TV",
     "slug": "antrian-webview-display",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#000000"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "WAKE_LOCK"],
+      "package": "com.antrian.display.tv",
+      "versionCode": 1,
+      "screenOrientation": "landscape",
+      "allowBackup": false,
+      "hardwareAccelerated": true,
+      "keepScreenOn": true
     }
   }
 }
