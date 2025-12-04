@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -30,7 +30,8 @@
       "screenOrientation": "landscape",
       "allowBackup": false,
       "hardwareAccelerated": true,
-      "keepScreenOn": true
+      "keepScreenOn": true,
+      "usesCleartextTraffic": true
     },
     "extra": {
       "eas": {
@@ -43,6 +44,18 @@
     "updates": {
       "url": "https://u.expo.dev/8bffdb2d-d88c-4482-8098-cbff194e56ed"
     },
-    "ios": {}
+    "ios": {},
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "enableProguardInReleaseBuilds": false,
+            "enableShrinkResourcesInReleaseBuilds": false
+          }
+        }
+      ]
+    ]
   }
 }
